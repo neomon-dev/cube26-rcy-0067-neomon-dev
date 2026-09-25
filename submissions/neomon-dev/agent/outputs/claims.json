@@ -1,0 +1,927 @@
+{
+  "summary": {
+    "total_charges_evaluated": 61,
+    "claims_recommended": 7,
+    "total_claim_amount_usd": 8.0,
+    "decision_breakdown": {
+      "INSUFFICIENT": 46,
+      "CONTRADICTS_CHARGE": 14,
+      "SUPPORTS_CHARGE": 1
+    }
+  },
+  "claims": [
+    {
+      "line_id": "FEE-0002-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0002",
+      "order_id": "ORD-DUMMY-50002",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0002"
+      ]
+    },
+    {
+      "line_id": "FEE-0003-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0003",
+      "order_id": "",
+      "charge_type": "lost_inbound",
+      "amount_usd": 0.0,
+      "decision": "INSUFFICIENT",
+      "reason": "receiving_uncertain",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RCV-0003"
+      ]
+    },
+    {
+      "line_id": "FEE-0003-2",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0003",
+      "order_id": "ORD-DUMMY-50003",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0003"
+      ]
+    },
+    {
+      "line_id": "FEE-0005-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0005",
+      "order_id": "ORD-DUMMY-50005",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0005"
+      ]
+    },
+    {
+      "line_id": "FEE-0007-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0007",
+      "order_id": "ORD-DUMMY-50007",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0007"
+      ]
+    },
+    {
+      "line_id": "FEE-0011-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0011",
+      "order_id": "ORD-DUMMY-50011",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0011"
+      ]
+    },
+    {
+      "line_id": "FEE-0012-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0012",
+      "order_id": "ORD-DUMMY-50012",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0012"
+      ]
+    },
+    {
+      "line_id": "FEE-0013-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0013",
+      "order_id": "ORD-DUMMY-50013",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0013"
+      ]
+    },
+    {
+      "line_id": "FEE-0014-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 2.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 2.0,
+      "evidence_record_ids": [
+        "PRP-0014"
+      ]
+    },
+    {
+      "line_id": "FEE-0014-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "order_id": "",
+      "charge_type": "lost_inbound",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "receiving_confirms_full_inbound",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RCV-0014"
+      ]
+    },
+    {
+      "line_id": "FEE-0014-3",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "order_id": "ORD-DUMMY-50014",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.75,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0014"
+      ]
+    },
+    {
+      "line_id": "FEE-0014-4",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "order_id": "ORD-DUMMY-50014",
+      "charge_type": "refund_issued_item_not_returned",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "return_record_exists",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RTN-0014"
+      ]
+    },
+    {
+      "line_id": "FEE-0015-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0015",
+      "order_id": "ORD-DUMMY-50015",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0015"
+      ]
+    },
+    {
+      "line_id": "FEE-0018-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0018",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 1.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 1.0,
+      "evidence_record_ids": [
+        "PRP-0018"
+      ]
+    },
+    {
+      "line_id": "FEE-0018-2",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0018",
+      "order_id": "ORD-DUMMY-50018",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0018"
+      ]
+    },
+    {
+      "line_id": "FEE-0024-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0024",
+      "order_id": "ORD-DUMMY-50024",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0024"
+      ]
+    },
+    {
+      "line_id": "FEE-0025-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0025",
+      "order_id": "ORD-DUMMY-50025",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0025"
+      ]
+    },
+    {
+      "line_id": "FEE-0026-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0026",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 1.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 1.0,
+      "evidence_record_ids": [
+        "PRP-0026"
+      ]
+    },
+    {
+      "line_id": "FEE-0030-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0030",
+      "order_id": "ORD-DUMMY-50030",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0030"
+      ]
+    },
+    {
+      "line_id": "FEE-0031-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0031",
+      "order_id": "",
+      "charge_type": "lost_inbound",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "receiving_confirms_full_inbound",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RCV-0031"
+      ]
+    },
+    {
+      "line_id": "FEE-0031-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0031",
+      "order_id": "ORD-DUMMY-50031",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0031"
+      ]
+    },
+    {
+      "line_id": "FEE-0035-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0035",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 0.5,
+      "decision": "INSUFFICIENT",
+      "reason": "prep_evidence_uncertain",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0035"
+      ]
+    },
+    {
+      "line_id": "FEE-0035-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0035",
+      "order_id": "ORD-DUMMY-50035",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0035"
+      ]
+    },
+    {
+      "line_id": "FEE-0036-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0036",
+      "order_id": "ORD-DUMMY-50036",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0036"
+      ]
+    },
+    {
+      "line_id": "FEE-0038-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0038",
+      "order_id": "ORD-DUMMY-50038",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0038"
+      ]
+    },
+    {
+      "line_id": "FEE-0038-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0038",
+      "order_id": "ORD-DUMMY-50038",
+      "charge_type": "refund_issued_item_not_returned",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "return_record_exists",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RTN-0038"
+      ]
+    },
+    {
+      "line_id": "FEE-0039-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0039",
+      "order_id": "ORD-DUMMY-50039",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0039"
+      ]
+    },
+    {
+      "line_id": "FEE-0041-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0041",
+      "order_id": "ORD-DUMMY-50041",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0041"
+      ]
+    },
+    {
+      "line_id": "FEE-0041-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0041",
+      "order_id": "ORD-DUMMY-50041",
+      "charge_type": "refund_issued_item_not_returned",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "return_record_exists",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RTN-0041"
+      ]
+    },
+    {
+      "line_id": "FEE-0042-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0042",
+      "order_id": "ORD-DUMMY-50042",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0042"
+      ]
+    },
+    {
+      "line_id": "FEE-0048-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0048",
+      "order_id": "ORD-DUMMY-50048",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0048"
+      ]
+    },
+    {
+      "line_id": "FEE-0048-2",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0048",
+      "order_id": "ORD-DUMMY-50048",
+      "charge_type": "refund_issued_item_not_returned",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "return_record_exists",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RTN-0048"
+      ]
+    },
+    {
+      "line_id": "FEE-0050-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0050",
+      "order_id": "ORD-DUMMY-50050",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0050"
+      ]
+    },
+    {
+      "line_id": "FEE-0051-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0051",
+      "order_id": "ORD-DUMMY-50051",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0051"
+      ]
+    },
+    {
+      "line_id": "FEE-0052-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0052",
+      "order_id": "ORD-DUMMY-50052",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0052"
+      ]
+    },
+    {
+      "line_id": "FEE-0061-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0061",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 2.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 2.0,
+      "evidence_record_ids": [
+        "PRP-0061"
+      ]
+    },
+    {
+      "line_id": "FEE-0061-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0061",
+      "order_id": "ORD-DUMMY-50061",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0061"
+      ]
+    },
+    {
+      "line_id": "FEE-0063-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0063",
+      "order_id": "ORD-DUMMY-50063",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0063"
+      ]
+    },
+    {
+      "line_id": "FEE-0064-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0064",
+      "order_id": "",
+      "charge_type": "lost_inbound",
+      "amount_usd": 0.0,
+      "decision": "SUPPORTS_CHARGE",
+      "reason": "receiving_shows_inbound_gap_or_damage",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RCV-0064"
+      ]
+    },
+    {
+      "line_id": "FEE-0064-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0064",
+      "order_id": "ORD-DUMMY-50064",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0064"
+      ]
+    },
+    {
+      "line_id": "FEE-0065-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0065",
+      "order_id": "ORD-DUMMY-50065",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0065"
+      ]
+    },
+    {
+      "line_id": "FEE-0071-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0071",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 1.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 1.0,
+      "evidence_record_ids": [
+        "PRP-0071"
+      ]
+    },
+    {
+      "line_id": "FEE-0071-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0071",
+      "order_id": "",
+      "charge_type": "damaged_in_warehouse",
+      "amount_usd": 14.0,
+      "decision": "INSUFFICIENT",
+      "reason": "missing_returns_evidence",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": []
+    },
+    {
+      "line_id": "FEE-0071-3",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0071",
+      "order_id": "ORD-DUMMY-50071",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0071"
+      ]
+    },
+    {
+      "line_id": "FEE-0073-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0073",
+      "order_id": "ORD-DUMMY-50073",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0073"
+      ]
+    },
+    {
+      "line_id": "FEE-0074-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0074",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 0.5,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 0.5,
+      "evidence_record_ids": [
+        "PRP-0074"
+      ]
+    },
+    {
+      "line_id": "FEE-0074-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0074",
+      "order_id": "ORD-DUMMY-50074",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0074"
+      ]
+    },
+    {
+      "line_id": "FEE-0076-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0076",
+      "order_id": "",
+      "charge_type": "lost_inbound",
+      "amount_usd": 0.0,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "receiving_confirms_full_inbound",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "RCV-0076"
+      ]
+    },
+    {
+      "line_id": "FEE-0076-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0076",
+      "order_id": "ORD-DUMMY-50076",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0076"
+      ]
+    },
+    {
+      "line_id": "FEE-0077-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0077",
+      "order_id": "ORD-DUMMY-50077",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0077"
+      ]
+    },
+    {
+      "line_id": "FEE-0081-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0081",
+      "order_id": "ORD-DUMMY-50081",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0081"
+      ]
+    },
+    {
+      "line_id": "FEE-0084-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0084",
+      "order_id": "ORD-DUMMY-50084",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0084"
+      ]
+    },
+    {
+      "line_id": "FEE-0085-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0085",
+      "order_id": "ORD-DUMMY-50085",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 4.25,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0085"
+      ]
+    },
+    {
+      "line_id": "FEE-0090-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0090",
+      "order_id": "ORD-DUMMY-50090",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0090"
+      ]
+    },
+    {
+      "line_id": "FEE-0092-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0092",
+      "order_id": "ORD-DUMMY-50092",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0092"
+      ]
+    },
+    {
+      "line_id": "FEE-0093-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0093",
+      "order_id": "ORD-DUMMY-50093",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 5.1,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0093"
+      ]
+    },
+    {
+      "line_id": "FEE-0094-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0094",
+      "order_id": "ORD-DUMMY-50094",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0094"
+      ]
+    },
+    {
+      "line_id": "FEE-0095-1",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0095",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 0.5,
+      "decision": "CONTRADICTS_CHARGE",
+      "reason": "prep_evidence_passed",
+      "recommend_claim": true,
+      "claim_amount_usd": 0.5,
+      "evidence_record_ids": [
+        "PRP-0095"
+      ]
+    },
+    {
+      "line_id": "FEE-0095-2",
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0095",
+      "order_id": "ORD-DUMMY-50095",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 6.35,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0095"
+      ]
+    },
+    {
+      "line_id": "FEE-0096-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0096",
+      "order_id": "",
+      "charge_type": "inbound_defect_fee",
+      "amount_usd": 2.0,
+      "decision": "INSUFFICIENT",
+      "reason": "prep_evidence_uncertain",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0096"
+      ]
+    },
+    {
+      "line_id": "FEE-0099-1",
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0099",
+      "order_id": "ORD-DUMMY-50099",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "amount_usd": 3.5,
+      "decision": "INSUFFICIENT",
+      "reason": "weight_tier_source_not_available_in_upstream_records",
+      "recommend_claim": false,
+      "claim_amount_usd": 0.0,
+      "evidence_record_ids": [
+        "PRP-0099"
+      ]
+    }
+  ]
+}
