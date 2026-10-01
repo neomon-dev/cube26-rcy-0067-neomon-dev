@@ -555,7 +555,7 @@ for charge in unit_charges:
             charge=charge,
             checks=normalized_checks,
             reimbursements=reimbursements,
-            filing_date=None,
+            
         )
 
         decisions.append(
