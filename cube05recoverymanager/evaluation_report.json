@@ -1,0 +1,3100 @@
+{
+  "model": "gemini-3.8-flash",
+  "claim_window_days": null,
+  "total_charges": 60,
+  "total_charge_amount": 188.69999999999996,
+  "claims_recommended": 0,
+  "recommended_claim_amount": 0,
+  "review_count": 60,
+  "review_rate": 100.0,
+  "verdict_counts": {
+    "insufficient_evidence": 60
+  },
+  "gemini": {
+    "model": "gemini-3.8-flash",
+    "runs": 9,
+    "successes": 9,
+    "failures": 0
+  },
+  "failure_modes": {},
+  "results": [
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0002",
+      "charge_id": "FEE-0002-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0005",
+      "charge_id": "FEE-0005-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0007",
+      "charge_id": "FEE-0007-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0011",
+      "charge_id": "FEE-0011-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0013",
+      "charge_id": "FEE-0013-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "charge_id": "FEE-0014-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 2.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "charge_id": "FEE-0014-2",
+      "charge_type": "lost_inbound",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "charge_id": "FEE-0014-3",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.75,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0014",
+      "charge_id": "FEE-0014-4",
+      "charge_type": "refund_issued_item_not_returned",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-04T14:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-06T07:36:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0025",
+      "charge_id": "FEE-0025-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0026",
+      "charge_id": "FEE-0026-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 1.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-06T08:15:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-06T08:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-07T18:15:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0031",
+      "charge_id": "FEE-0031-1",
+      "charge_type": "lost_inbound",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0031",
+      "charge_id": "FEE-0031-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0035",
+      "charge_id": "FEE-0035-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 0.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-02T09:41:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-02T09:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0035",
+      "charge_id": "FEE-0035-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-02T09:41:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-02T09:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-03T16:41:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0038",
+      "charge_id": "FEE-0038-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0038",
+      "charge_id": "FEE-0038-2",
+      "charge_type": "refund_issued_item_not_returned",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0041",
+      "charge_id": "FEE-0041-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0041",
+      "charge_id": "FEE-0041-2",
+      "charge_type": "refund_issued_item_not_returned",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0050",
+      "charge_id": "FEE-0050-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0052",
+      "charge_id": "FEE-0052-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0061",
+      "charge_id": "FEE-0061-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 2.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-09T14:28:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-09T14:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0061",
+      "charge_id": "FEE-0061-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-09T14:28:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-09T14:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-10T07:28:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0064",
+      "charge_id": "FEE-0064-1",
+      "charge_type": "lost_inbound",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0064",
+      "charge_id": "FEE-0064-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0065",
+      "charge_id": "FEE-0065-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0071",
+      "charge_id": "FEE-0071-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 1.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-06T13:03:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-06T13:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0071",
+      "charge_id": "FEE-0071-3",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-06T13:03:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-06T13:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-07T05:03:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0073",
+      "charge_id": "FEE-0073-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0074",
+      "charge_id": "FEE-0074-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 0.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-10T04:13:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-10T04:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0074",
+      "charge_id": "FEE-0074-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-10T04:13:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-10T04:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-11T02:13:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0076",
+      "charge_id": "FEE-0076-1",
+      "charge_type": "lost_inbound",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0076",
+      "charge_id": "FEE-0076-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0077",
+      "charge_id": "FEE-0077-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0085",
+      "charge_id": "FEE-0085-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0092",
+      "charge_id": "FEE-0092-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0094",
+      "charge_id": "FEE-0094-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0095",
+      "charge_id": "FEE-0095-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 0.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "supports",
+          "value": "water",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-03T09:03:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-03T09:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_alpha",
+      "unit_id": "UNIT-0095",
+      "charge_id": "FEE-0095-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 6.35,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "supports",
+          "value": "water",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-03T09:03:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "24/24",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-03T09:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-04T05:03:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0003",
+      "charge_id": "FEE-0003-1",
+      "charge_type": "lost_inbound",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0003",
+      "charge_id": "FEE-0003-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0012",
+      "charge_id": "FEE-0012-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0015",
+      "charge_id": "FEE-0015-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0018",
+      "charge_id": "FEE-0018-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 1.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-07T07:44:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-07T07:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0018",
+      "charge_id": "FEE-0018-2",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-07T07:44:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-07T07:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "not_applicable",
+          "value": "not_required",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "contradicts",
+          "value": "flat",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-08T04:44:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0024",
+      "charge_id": "FEE-0024-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0030",
+      "charge_id": "FEE-0030-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0036",
+      "charge_id": "FEE-0036-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0039",
+      "charge_id": "FEE-0039-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0042",
+      "charge_id": "FEE-0042-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0048",
+      "charge_id": "FEE-0048-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0048",
+      "charge_id": "FEE-0048-2",
+      "charge_type": "refund_issued_item_not_returned",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 0.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "not_applicable",
+      "model_status": "completed",
+      "reasons": [
+        "Charge amount is zero or negative."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0051",
+      "charge_id": "FEE-0051-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0063",
+      "charge_id": "FEE-0063-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0081",
+      "charge_id": "FEE-0081-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 4.25,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0084",
+      "charge_id": "FEE-0084-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0090",
+      "charge_id": "FEE-0090-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0093",
+      "charge_id": "FEE-0093-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 5.1,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0096",
+      "charge_id": "FEE-0096-1",
+      "charge_type": "inbound_defect_fee",
+      "charge_subtype": null,
+      "granularity": "shipment",
+      "amount": 2.0,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Inbound defect fee has no charge subtype; a specific evidence mapping cannot be selected without guessing."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": [
+        {
+          "source": "receiving",
+          "check_key": "unit_undamaged",
+          "status": "contradicts",
+          "value": "none",
+          "reason": "Receiving evidence for unit condition.",
+          "fields": [
+            "unit_damage"
+          ],
+          "event_date": "2026-06-07T04:16:00Z"
+        },
+        {
+          "source": "receiving",
+          "check_key": "quantity_matches_po",
+          "status": "contradicts",
+          "value": "48/48",
+          "reason": "Receiving quantity compared with ordered quantity.",
+          "fields": [
+            "qty_ordered",
+            "qty_received"
+          ],
+          "event_date": "2026-06-07T04:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_present",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag presence.",
+          "fields": [
+            "polybag_present"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "polybag_sealed",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for polybag sealing.",
+          "fields": [
+            "polybag_sealed"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_present",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning presence.",
+          "fields": [
+            "suffocation_warning_present"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "suffocation_warning_legible",
+          "status": "insufficient",
+          "value": "legible",
+          "reason": "Prep evidence for suffocation warning legibility.",
+          "fields": [
+            "suffocation_warning_legible"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_flat",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Prep evidence for FNSKU label placement.",
+          "fields": [
+            "fnsku_label_flat"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "fnsku_label_placement_valid",
+          "status": "insufficient",
+          "value": "uncertain",
+          "reason": "Prep evidence for valid FNSKU placement.",
+          "fields": [
+            "fnsku_label_placement_valid"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        },
+        {
+          "source": "prep",
+          "check_key": "manufacturer_barcode_covered",
+          "status": "contradicts",
+          "value": "yes",
+          "reason": "Prep evidence for manufacturer barcode coverage.",
+          "fields": [
+            "manufacturer_barcode_covered"
+          ],
+          "event_date": "2026-06-08T18:16:00Z"
+        }
+      ]
+    },
+    {
+      "org_id": "org_demo_bravo",
+      "unit_id": "UNIT-0099",
+      "charge_id": "FEE-0099-1",
+      "charge_type": "fulfilment_fee_weight_tier",
+      "charge_subtype": null,
+      "granularity": "unit",
+      "amount": 3.5,
+      "verdict": "insufficient_evidence",
+      "recommended_claim_amount": 0.0,
+      "already_reimbursed_amount": 0.0,
+      "evidence_complete": false,
+      "window_status": "unknown",
+      "model_status": "completed",
+      "reasons": [
+        "Fulfilment fee weight tier has no documented Recovery evidence mapping."
+      ],
+      "uncertainty_reasons": [],
+      "supporting_evidence": [],
+      "checks": []
+    }
+  ]
+}
