@@ -1,6 +1,8 @@
 # Recovery Manager — AI Evidence-to-Recovery Agent
 ##Deployment Link: https://recoverymanagerbymdmohidhossain.streamlit.app/
 
+##Demo Video: https://youtu.be/hI-Wgt3fSSw
+
 ## Overview
 
 Recovery Manager is an AI-assisted recovery system that analyzes operational charges against available evidence and determines whether a recovery claim can be supported.
